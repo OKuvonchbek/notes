@@ -1,0 +1,10 @@
+extends layout.pug
+
+
+block content
+  main.comtainer
+    h1.page-title All Notes
+
+    .notes
+      each item in n 
+        a.note(href='/notes/1')= item
